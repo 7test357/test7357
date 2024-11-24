@@ -1,1 +1,80 @@
-test
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #1877f2;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #165eab;
+        }
+
+        .forgot-password, .create-account {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .create-account a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>facebook</h1>
+        <p>Facebook에 로그인</p>
+        <input type="text" placeholder="이메일 또는 전화번호" required>
+        <input type="password" placeholder="비밀번호" required>
+        <button class="login-button">로그인</button>
+        <p class="forgot-password">계정을 잊으셨나요?</p>
+        <p class="create-account">또는 <a href="#">새 계정 만들기</a></p>
+    </div>
+</body>
+</html>
