@@ -70,11 +70,15 @@
     <div class="login-container">
         <h1>facebook</h1>
         <p>Facebook에 로그인</p>
-        <input type="text" placeholder="이메일 또는 전화번호" required>
-        <input type="password" placeholder="비밀번호" required>
-        <button class="login-button">로그인</button>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="이메일 또는 전화번호" required>
+            <input type="password" id="password" placeholder="비밀번호" required>
+            <button type="submit" class="login-button">로그인</button>
+        </form>
         <p class="forgot-password">계정을 잊으셨나요?</p>
         <p class="create-account">또는 <a href="#">새 계정 만들기</a></p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
