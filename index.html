@@ -34,15 +34,35 @@
         button:hover {
             background-color: #45a049;
         }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10%;
+        }
+        .login-form input {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
+    <div class="login-form" id="loginForm">
+        <h1>로그인</h1>
+        <input type="text" id="username" placeholder="아이디를 입력하세요" />
+        <input type="password" id="password" placeholder="비밀번호를 입력하세요" />
+        <button id="loginButton">로그인</button>
+    </div>
+
     <div class="container" id="mainContent" style="display:none;">
         <h1>메인 페이지</h1>
 <!--         <button id="fbButton">Facebook 페이지로 이동</button>
         <button id="igButton">Instagram 페이지로 이동</button> -->
         <button id="googleButton">Google 페이지로 이동</button>
     </div>
+
     <script src="login.js"></script>
 </body>
 </html>
