@@ -1,16 +1,20 @@
 window.onload = function() {
+    document.getElementById('loginForm').style.display = 'block';
+
     const username = 'test';
     const password = '7357';
 
-    let inputUsername = prompt('아이디를 입력하세요:');
-    let inputPassword = prompt('비밀번호를 입력하세요:');
+    document.getElementById('loginButton').addEventListener('click', function() {
+        let inputUsername = document.getElementById('username').value;
+        let inputPassword = document.getElementById('password').value;
 
-    if (inputUsername === username && inputPassword === password) {
-        document.getElementById('mainContent').style.display = 'block';
-    } else {
-        alert('로그인 실패: 아이디 또는 비밀번호가 잘못되었습니다.');
-        window.location.href = 'about:blank';
-    }
+        if (inputUsername === username && inputPassword === password) {
+            document.getElementById('mainContent').style.display = 'block';
+            document.getElementById('loginForm').style.display = 'none';
+        } else {
+            alert('로그인 실패: 아이디 또는 비밀번호가 잘못되었습니다.');
+        }
+    });
 
     document.getElementById('fbButton').addEventListener('click', function() {
         window.location.href = '/fb/index.html';
