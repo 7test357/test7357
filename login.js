@@ -1,6 +1,4 @@
 window.onload = function() {
-    document.getElementById('loginForm').style.display = 'block';
-
     const username = 'test';
     const password = '7357';
 
