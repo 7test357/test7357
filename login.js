@@ -18,4 +18,7 @@ window.onload = function() {
     document.getElementById('igButton').addEventListener('click', function() {
         window.location.href = '/ig/index.html';
     });
+    document.getElementById('googleButton').addEventListener('click', function() {
+        window.location.href = 'https://www.google.com';
+    });
 };
