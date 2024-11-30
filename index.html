@@ -14,34 +14,47 @@
         .container {
             text-align: center;
             margin-top: 20%;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         h1 {
             color: #333;
+            margin-bottom: 20px;
         }
-        button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
+        a {
             text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 10px;
-            cursor: pointer;
+            color: white;
+            background-color: #4CAF50;
+            padding: 15px 30px;
             border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin: 10px;
         }
-        button:hover {
+        a:hover {
             background-color: #45a049;
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <div class="container" id="mainContent" style="display:none;">
         <h1>메인 페이지</h1>
-        <a href="https://www.google.com">Google</a><br>
+        <a href="https://www.google.com">Google</a>
         <a href="rptlvks/index.html">게시판</a>
-        <!--<a href="https://7357test.kro.kr">hiddenlink</a>-->
+        <!--<a href="http://7357test.kro.kr">hiddenlink</a>-->
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 나의 웹 페이지</p>
     </div>
     <script src="login.js"></script>
 </body>
